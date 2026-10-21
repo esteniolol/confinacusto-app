@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 204"><defs><filter id="h" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="11"/><feDisplacementMap in="SourceGraphic" scale="3.2"/></filter></defs><g filter="url(#h)">
+<ellipse cx="120" cy="196" rx="104" ry="6" fill="#000" opacity=".08"/>
+<path d="M118 120 L170 86 L222 120 L222 194 L118 194 Z" fill="#3F5D57" stroke="#2F4843" stroke-width="3"/>
+<path d="M112 122 L170 82 L228 122" fill="none" stroke="#C9B48A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="148" y="140" width="44" height="54" fill="#F3EEE3" stroke="#C9B48A" stroke-width="3"/>
+<path d="M148 140 L192 194 M192 140 L148 194" stroke="#C9B48A" stroke-width="4"/>
+<rect x="34" y="58" width="70" height="136" fill="#E4DFD6" stroke="#CFC7BA" stroke-width="3"/>
+<path d="M34 58 C34 24 104 24 104 58 Z" fill="#C9C2B6" stroke="#B8B0A3" stroke-width="3"/>
+<path d="M34 80 H104 M34 102 H104 M34 124 H104 M34 146 H104 M34 168 H104" stroke="#CFC7BA" stroke-width="2.5"/>
+<path d="M90 40 V194 M98 40 V194" stroke="#9E978B" stroke-width="2.5"/>
+<path d="M90 60 H98 M90 76 H98 M90 92 H98 M90 108 H98 M90 124 H98 M90 140 H98 M90 156 H98 M90 172 H98" stroke="#9E978B" stroke-width="2"/>
+</g></svg>
