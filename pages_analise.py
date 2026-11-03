@@ -510,12 +510,12 @@ def pagina_simulador():
                 sd_g = v[3].number_input("GMD (±%)", 0.0, 40.0, 8.0, 1.0) / 100
             mc = monte_carlo(base, cen, n=10000, sd_venda=sd_v, sd_compra=sd_c, sd_milho=sd_m, sd_gmd=sd_g)
             res = mc["res_cab"]
-            k = st.columns(4)
-            k[0].metric("Prejuízo", pct(mc["prob_prejuizo"]), border=True,
+            k = st.columns(2) + st.columns(2)      # 2 x 2: cabe o valor inteiro em tela de notebook
+            k[0].metric("Chance de prejuízo", pct(mc["prob_prejuizo"]), border=True,
                         help="Proporção dos cenários com resultado operacional negativo por boi.")
-            k[1].metric("Pior 5%", brl(mc["p5"]), border=True)
-            k[2].metric("Mediana", brl(mc["p50"]), border=True)
-            k[3].metric("Melhor 5%", brl(mc["p95"]), border=True)
+            k[1].metric("Mediana por boi", brl(mc["p50"]), border=True)
+            k[2].metric("Pior 5% por boi", brl(mc["p5"]), border=True)
+            k[3].metric("Melhor 5% por boi", brl(mc["p95"]), border=True)
             hist, edges = np.histogram(res, bins=np.linspace(res.min(), res.max(), 60))
             centros = (edges[:-1] + edges[1:]) / 2
             fig = go.Figure(go.Bar(x=centros, y=hist, width=np.diff(edges), marker_line_width=0,
